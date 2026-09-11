@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff5f9;
+    color: #4a2635;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 60px 0 30px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.eyebrow {
+    color: #d81b72;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+h1 {
+    margin: 12px 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 60px;
+    line-height: 1;
+}
+
+h1 span {
+    color: #e83e8c;
+}
+
+.intro {
+    max-width: 600px;
+    margin: 20px auto 0;
+    color: #765967;
+    line-height: 1.7;
+    font-size: 17px;
+}
+
+.planner-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+
+    background-color: white;
+
+    border: 2px solid #f2a8c8;
+    border-radius: 24px;
+
+    padding: 35px;
+
+    box-shadow: 0 15px 35px rgba(216, 27, 114, 0.12);
+}
+
+.form-area {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 8px 0;
+    font-weight: bold;
+}
+
+select {
+    width: 100%;
+    padding: 14px;
+
+    border: 1px solid #e6b4c9;
+    border-radius: 10px;
+
+    background-color: #fff9fc;
+    color: #4a2635;
+
+    font-size: 16px;
+}
+
+button {
+    margin-top: 25px;
+
+    padding: 15px 20px;
+
+    border: none;
+    border-radius: 30px;
+
+    background-color: #e83e8c;
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 350px;
+
+    padding: 30px;
+
+    text-align: center;
+
+    border-radius: 18px;
+
+    background-color: #fff0f6;
+
+    border: 2px dashed #e83e8c;
+}
+
+.ticket {
+    font-size: 55px;
+}
+
+.result h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    color: #d81b72;
+    font-size: 32px;
+}
+
+.result p {
+    line-height: 1.6;
+}
+
+.plan-details {
+    width: 100%;
+    text-align: left;
+}
+
+.plan-details p {
+    margin: 10px 0;
+    padding: 10px 14px;
+
+    background-color: white;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    color: #8a6978;
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+@media (max-width: 700px) {
+
+    .planner-card {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 42px;
+    }
+
+    .container {
+        padding-top: 35px;
+    }
+}
