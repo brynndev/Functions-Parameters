@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Movie Night Planner</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -35,12 +34,17 @@
                 <label for="movie">Choose a movie</label>
 
                 <select id="movie">
-                    <option value="Harry Potter">Harry Potter</option>
-                    <option value="The Princess Diaries">
-                        The Princess Diaries
+                    <option value="The Phantom of the Opera">
+                        The Phantom of the Opera
                     </option>
-                    <option value="Jurassic Park">Jurassic Park</option>
-                    <option value="Clueless">Clueless</option>
+
+                    <option value="Avengers: Endgame">
+                        Avengers: Endgame
+                    </option>
+
+                    <option value="The Notebook">
+                        The Notebook
+                    </option>
                 </select>
 
 
@@ -62,6 +66,18 @@
                     <option value="Lemonade">Lemonade</option>
                     <option value="Hot Chocolate">Hot Chocolate</option>
                 </select>
+
+
+                <label for="guests">
+                    How many people are watching?
+                </label>
+
+                <input
+                    type="number"
+                    id="guests"
+                    min="1"
+                    value="1"
+                >
 
 
                 <button id="planButton">
@@ -99,4 +115,5 @@
     <script src="script.js"></script>
 
 </body>
+
 </html>
